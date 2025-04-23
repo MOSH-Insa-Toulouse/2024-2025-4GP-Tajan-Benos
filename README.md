@@ -58,7 +58,7 @@ Mettre schéma montage LTSpice et Graphe simulation des filtres.
 Lors de la phase de conception du shield, nous avons d’abord repris le gabarit d’une carte Arduino UNO dans KiCad (version 7.0) pour garantir une compatibilité mécanique et électrique. Après avoir listé tous les éléments dont nous avions besoin, nous avons créé dans KiCad, les symboles et empreintes manquants en respectant leurs dimensions et l’écartement des broches. Voici le schéma électrique de l'ensemble de notre montage :
 
 <p align="center">
-<img src="https://github.com/Vicky-bns/2024-2025-4GP-Tajan-Benos/blob/main/Image/Circuit_electronique.png" alt="Figure 1 - Circuit électronique">
+<img src="https://github.com/MOSH-Insa-Toulouse/2024-2025-4GP-Tajan-Benos/blob/main/Image/Circuit_electronique.png" alt="Figure 1 - Circuit électronique">
 <br>
 <i>Circuit électronique</i>
 </p>
