@@ -7,9 +7,9 @@
   - [III. Matériel nécessaire](#matériel-nécessaire)
   - [IV. Electronique Analogique sous LTSpice](#electronique-analogique-sous-ltspice)
   - [V. Création du PCB sous KiCad](#creation-du-pcb-sous-kicad)
-  - [VI. Code Arduino](#code-arduino)
-  - [VII. Application Android](#application-android)
-  - [VIII. Réalisation du shield](#réalisation-du-shield)
+  - [VI. Réalisation du shield](#réalisation-du-shield)
+  - [VII. Code Arduino](#code-arduino)
+  - [VIII. Application Android](#application-android)
   - [IX. Banc de tests](#banc-de-tests)
   - [X. Datasheet](#datasheet)
 
@@ -63,7 +63,17 @@ Lors de la phase de conception du shield, nous avons d’abord repris le gabarit
 <i>Circuit électronique</i>
 </p>
 
-Une fois notre bibliothèque faites, nous avons assemblé le schéma électrique complet : chaque composant est relié selon le fonctionnement prévu. Cette étape nous a permis de vérifier que l’ensemble des composants tenait bien sur la zone réservée au Shield. En passant à la vue PCB, nous avons effectué le routage des pistes dans le but d'une organisation optimal puis ajouté un plan de masse pour améliorer la stabilité et réduire les interférences. 
+Une fois notre bibliothèque faites, nous avons assemblé le schéma électrique complet : chaque composant est relié selon le fonctionnement prévu. Cette étape nous a permis de vérifier que l’ensemble des composants tenait bien sur la zone réservée au Shield. En passant à la vue PCB, nous avons effectué le routage des pistes dans le but d'une organisation optimal puis ajouté un plan de masse pour relier les pistes au GND. 
 Voici notre PCB :
 
+Image PCB
+
 Le résultat est un circuit imprimé prêt à être fabriqué et, une fois soudés, à recevoir chaque composant sur le shield Arduino UNO.
+
+## Réalisation du Shield
+
+Nous avons commencé par l’édition du masque de gravure de notre circuit imprimé (PCB) à l’aide du logiciel KiCad. Ensuite, nous avons procédé à l’insolation UV d’une plaquette d’époxy recouverte d’une fine couche de cuivre et de résine photosensible. La plaquette a ensuite été immergée dans un révélateur chimique, ce qui permet d’éliminer la résine non exposée aux UV. Il faut ensuite plongé la plaquette dans du perchlorure de fer pour de graver les pistes du circuit en dissolvant le cuivre non protégé. Et enfin, il faut un nettoyage à l’acétone pour retirer les résidus de résine restants sur la plaquette. A la fin de ce travail, nous avions notre circuit imprimé avec toutes les pistes tracées. 
+Une fois le PCB réalisé, nous n'avions plus qu'à le percer les trous et y souder tous nos composants. Voici notre PCB final :
+
+
+
