@@ -75,5 +75,21 @@ Le résultat est un circuit imprimé prêt à être fabriqué et, une fois soud�
 Nous avons commencé par l’édition du masque de gravure de notre circuit imprimé (PCB) à l’aide du logiciel KiCad. Ensuite, nous avons procédé à l’insolation UV d’une plaquette d’époxy recouverte d’une fine couche de cuivre et de résine photosensible. La plaquette a ensuite été immergée dans un révélateur chimique, ce qui permet d’éliminer la résine non exposée aux UV. Il faut ensuite plongé la plaquette dans du perchlorure de fer pour de graver les pistes du circuit en dissolvant le cuivre non protégé. Et enfin, il faut un nettoyage à l’acétone pour retirer les résidus de résine restants sur la plaquette. A la fin de ce travail, nous avions notre circuit imprimé avec toutes les pistes tracées. 
 Une fois le PCB réalisé, nous n'avions plus qu'à le percer les trous et y souder tous nos composants. Voici notre PCB final :
 
+## Code Arduino 
+
+
+## Application Android
+
+Nous avons conçu une application Android en utilisant la plateforme MIT App Inventor. Cette application permet de recevoir les données de la carte Arduino via une connexion Bluetooth en utilisant le module HC-05 qui se trouve sur notre shield. Après la connexion bluetooth, l'application nous donne en temps réel la valeur de la résistance du capteur graphite et trace sa courbe en fonction du temps sur un graphique.
+
+Image appli 
+
+## Banc de test
+
+
+## Datasheet
+
+La datasheet de notre capteur est disponible [ici](Datasheet).
+
 
 
