@@ -18,7 +18,6 @@ const float bendResistance = 60000.0;
 
 // ========= Initialisation capteur graphène ========= //
 float R1 = 100000.0;
-float R2 = 1000.0;
 float R3 = 100000.0;
 float R5 = 10000.0;
 float Rc = 0.0;
@@ -35,7 +34,7 @@ bool lastButtonState = HIGH;
 unsigned long lastDebounceTime = 0;
 const unsigned long debounceDelay = 50;
 int lastStateCLK;
-const char* menuItems[] = {"Calib Potar", "FlexSensor", "Capteur Graph","Bleutooth"};
+const char* menuItems[] = {"Calib Potar", "FlexSensor", "Capteur Graph","Bluetooth"};
 
 // ========= Initialisation potentiometre digital ========= //
 const byte csPin = 10;
@@ -43,8 +42,9 @@ const int maxPositions = 256;
 const long rAB = 46000;
 const byte rWiper = 125;
 const byte pot0 = 0x11;
-const int resistanceOptions[4] = {100, 1000, 10000, 100000};
+const float resistanceOptions[4] = {100.0, 1000.0, 10000.0, 100000.0};
 volatile int resistanceIndex = 1;  // par défaut R2 = 1000
+float R2 = resistanceOptions[resistanceIndex];
 
 void setPotWiper(int addr, int pos) {
   pos = constrain(pos, 0, 255);
@@ -169,7 +169,7 @@ void handleMenuSelection(int index) {
       delay(5000);
       break;
     case 3:
-      ecranOLED.println("Bleutooth");
+      ecranOLED.println("Bluetooth");
       ecranOLED.display();
       inBluetoothMode = true;
       bluetooth();
