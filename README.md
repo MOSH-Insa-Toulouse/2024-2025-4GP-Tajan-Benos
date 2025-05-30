@@ -10,7 +10,7 @@
   - [VI. Réalisation du shield](#réalisation-du-shield)
   - [VII. Code Arduino](#code-arduino)
   - [VIII. Application Android](#application-android)
-  - [IX. Banc de tests](#banc-de-tests)
+  - [IX. Banc de test](#banc-de-test)
   - [X. Datasheet](#datasheet)
   - [XI. Conclusion](#conclusion)
 
