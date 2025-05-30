@@ -12,6 +12,7 @@
   - [VIII. Application Android](#application-android)
   - [IX. Banc de tests](#banc-de-tests)
   - [X. Datasheet](#datasheet)
+  - [XI. Conclusion](#conclusion)
 
 *** 
 
@@ -125,6 +126,9 @@ Nous avons conçu une application Android en utilisant la plateforme MIT App Inv
 ## Datasheet
 
 La datasheet de notre capteur est disponible [ici](Datasheet).
+
+## Conclusion
+
 
 
 
