@@ -26,7 +26,7 @@
   - Shield PCB compatible Arduino UNO, intégrant un capteur graphite, un amplificateur transimpédance, un module Bluetooth, un écran OLED, un flex sensor, un potentiomètre digital et un encodeur rotatoire
   - Code Arduino assurant la lecture du capteur, l’affichage des données, la communication Bluetooth et l’interaction avec les composants
   - Application Android réalisée sous MIT App Inventor pour visualiser les mesures transmises par Bluetooth
-  - Banc de test utilisé pour caractériser le capteur et valider son fonctionnement
+  - Graphes caractéristiques de la variation de résistance du capteur graphène et du flex sensor, pour montrer les résultats obtenus sur le banc de test
   - Datasheet du capteur de contrainte, présentant ses principales caractéristiques et résultats expérimentaux
 
 ## Matériel nécessaire
