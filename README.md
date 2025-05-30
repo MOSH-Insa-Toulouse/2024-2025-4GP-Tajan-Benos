@@ -161,11 +161,19 @@ Et ci-dessous la caractéristique du flex sensor en tension :
 <i>Caractéristique du flex sensor en tension</i>
 </p>
 
+Nous remarquons que la résistance évolue lorsque le capteur graphite est soumis à une déformation. En tension, la résistance augmente, tandis qu'en compression, elle diminue. Ce phénomène s'explique par le rapprochement des atomes lors de la compression, facilitant ainsi le passage du courant. Lors de la tension, les atomes s'éloignent, le courant a alors plus de mal pour passer. Les résultats montrent aussi que le type de crayon utilisé influence les valeurs de résistance mesurées. 
+
+Ces résultats expérimentaux permettent de conclure que le capteur commercial est globalement plus sensible à la déformation que les capteurs en graphite, même si cette dernière est acceptable. De plus, il possède une certaine robustesse contrairement aux capteurs en papier : ceux-ci sont fragiles et n'importe quel contact peut altérer le gtaphite déposé. Ceci est particulièrement gênant pour les mesures en compression, où le frottement du graphite du le banc de test vient perturber les mesures et ne nous permet pas d'avoir une courbe linéaire comme attendue. Le nombre d'utilisation est aussi limité, entre 1 et 3 séries de tests pour la plupart. Au-delà, les variations de résistance étaient très aléatoires et parfois inexistantes. Il était également nécessaire de déposer une grande quantité de graphite sur le papier pour pouvoir mesurer une résistance, notamment avec des crayons bien gras. 
+
 ## Datasheet
 
 La datasheet de notre capteur est disponible [ici](Datasheet).
 
 ## Conclusion
+
+Grâce à la série d'étapes amenant aux tests réalisés sur les deux capteurs, nous pouvons répondre à la question, à savoir si le capteur graphène est industrialisable ou non. 
+
+Comme mentionnés dans la partie [IX. Banc de test](#banc-de-test), les résultats montrent que le capteur commercial possède plusieurs avantages par rapport au capteur graphène. Il est plus fiable, plus durable, et moins contraignant, ce qui nous amène à être réticents à l'idée de commercialiser notre capteur. Toutefois, sa sensibilité est plus qu'acceptable, et il est capable de mesurer en compression. Pour une utilisation unique et rapide, il reste une belle option. Si nous améliorions sa capacité de compression (en protégeant le graphite par un gel par exemple), il deviendrait une solution de choix. Mais cette solution est avant tout low tech, il faudrait donc rester acessible. 
 
 
 
