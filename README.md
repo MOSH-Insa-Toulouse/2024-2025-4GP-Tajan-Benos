@@ -31,11 +31,11 @@
 ## Matériel nécessaire
 
   - 1 carte Arduino Uno
-  - 2 Résistance de 100kΩ
+  - 2 Résistances de 100kΩ
   - 1 Résistance de 1kΩ
   - 1 Potentiomètre digital MCP-41050
   - 2 Condensateurs 100nF
-  - 1 Condensateurs 1µF
+  - 1 Condensateur 1µF
   - 1 Amplificateur LTC1050
   - 1 Écran OLED01
   - 1 Module Bluetooth HC-05
@@ -83,6 +83,13 @@ Une fois le PCB réalisé, nous n'avions plus qu'à le percer les trous et y sou
 
 ## Code Arduino 
 
+Ce projet a été piloté par un programme Arduino. Pour utiliser les fonctions spéciales à tous les composants, nous avons installé les librairies Adafruit_SSD1306.h , SPI.h , et SoftwareSerial.h.
+
+Le programme permet d'initialiser et de paramétrer nos composants pour le bon fonctionnement du circuit. Une fois la carte mise sous tension, l'écran OLED affiche 4 possibilités sélectionnables grâce à l'encodeur rotatoire : 
+- "Calib Potar" permettant de définir la valeur de la résistance du potentiomètre (notée R2 dans notre montage et notre code)
+- "FlexSensor" pour réaliser une mesure momentanée de résistence du flex sensor
+- "Capteur Graph" dans le but d'afficher la mesure de résistance sur le capteur graphène
+- "Bluetooth" afin d'envoyer des mesures toutes les 2 secondes à l'application Androïd, permettant de modifier la courbure du capteur graphène et d'en remarquer la variation de résistance
 
 ## Application Android
 
