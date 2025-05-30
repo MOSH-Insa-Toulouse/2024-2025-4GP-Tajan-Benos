@@ -59,7 +59,7 @@ Ce circuit convertit ainsi le faible courant issu du capteur en une tension prop
 
 ## Création du PCB sous KiCad
 
-Lors de la phase de conception du shield, nous avons d’abord repris le gabarit d’une carte Arduino UNO dans KiCad (version 7.0) pour garantir une compatibilité mécanique et électrique. Après avoir listé tous les éléments dont nous avions besoin, nous avons créé dans KiCad, les symboles et empreintes manquants en respectant leurs dimensions et l’écartement des broches. Voici le schéma électrique de l'ensemble de notre montage :
+Lors de la phase de conception du shield, nous avons d’abord repris le gabarit d’une carte Arduino UNO dans KiCad (version 8.0) pour garantir une compatibilité mécanique et électrique. Après avoir listé tous les éléments dont nous avions besoin, nous avons créé dans KiCad, les symboles et empreintes manquants en respectant leurs dimensions et l’écartement des broches. Voici le schéma électrique de l'ensemble de notre montage :
 
 <p align="center">
 <img src="https://github.com/MOSH-Insa-Toulouse/2024-2025-4GP-Tajan-Benos/blob/main/Image/Circuit_electronique.png" alt="Figure 1 - Circuit électronique">
@@ -132,7 +132,13 @@ Pour cela, nous avons utilisé le banc de test ci-dessous, constitué de 6 cylin
 <i>Banc de test utilisé</i>
 </p>
 
+Pour toutes les mesures, nous avons assigné une valeur de 10 kΩ à la résistance du potentiomètre digital. En ce qui concerne le capteur graphène, nous déposions le graphite issu des crayons 6B, 3B, et B. Nous n'avons pas réussi à obtenir des valeurs convenables avec des crayons plus durs. 
 
+Le principe du test est de poser le capteur sur le cylindre et de le tordre selon la courbure du cylindre. Une fois le capteur bien posé, nous relevons la valeur de la résistance. 
+
+Le programme Arduino réceptionne un signal du capteur graphène et le convertit grâce à la formule : 
+
+Pour nos calculs, les valeurs qui nous intéressent sont la variation relative de résitance en fonction de la déformation.
 ## Datasheet
 
 La datasheet de notre capteur est disponible [ici](Datasheet).
