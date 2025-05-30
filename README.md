@@ -2,7 +2,7 @@
 
 ## SOMMAIRE
 *** 
-  - [I. Description Projet Graphite](#description-projet-draphite)
+  - [I. Description Projet Graphite](#description-projet-graphite)
   - [II. Livrables](#livrables)
   - [III. Matériel nécessaire](#matériel-nécessaire)
   - [IV. Electronique Analogique sous LTSpice](#electronique-analogique-sous-ltspice)
