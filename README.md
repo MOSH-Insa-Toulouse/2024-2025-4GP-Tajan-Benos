@@ -124,7 +124,7 @@ Nous avons conçu une application Android en utilisant la plateforme MIT App Inv
 
 Après avoir réalisé le montage électrique complet, ainsi que les parties softwares adéquates, il était nécessaire de tester notre capteur ainsi que le capteur commercial pour pouvoir les comparer. 
 
-Pour cela, nous avons utilisé le banc de test ci-dessous, constitué de 6 cylindres différents dont les diamètres font 14,8 mm ; 19,8 mm ; 24,8 mm ; 29,8 mm ; 34,8 mm ; 39,8 mm.
+Pour cela, nous avons utilisé le banc de test ci-dessous, constitué de 6 cylindres différents dont les diamètres D font 14,8 mm ; 19,8 mm ; 24,8 mm ; 29,8 mm ; 34,8 mm ; 39,8 mm.
 
 <p align="center">
 <img src="https://github.com/MOSH-Insa-Toulouse/2024-2025-4GP-Tajan-Benos/blob/main/Image/Banc%20de%20test.png" alt="Figure 6 - Banc de Test">
