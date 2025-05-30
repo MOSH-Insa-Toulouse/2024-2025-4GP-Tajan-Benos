@@ -136,7 +136,7 @@ Pour toutes les mesures, nous avons assigné une valeur de 10 kΩ à la résist
 
 Le principe du test est de poser le capteur sur le cylindre et de le tordre selon la courbure du cylindre. Une fois le capteur bien posé, nous relevons la valeur de la résistance. 
 
-Pour nos calculs, les valeurs qui nous intéressent sont la variation relative de résitance (<i>![fraction](https://latex.codecogs.com/svg.image?\frac{'ΔR'}{R_0_})<i>)
+Pour nos calculs, les valeurs qui nous intéressent sont la variation relative de résitance (![fraction](https://latex.codecogs.com/svg.image?\frac{'ΔR'}{R_0_}) avec 'ΔR' = R - R_0_ et R_0_ la résistance lorsque le capteur est à plat)
 en fonction de la déformation. 
 
 ## Datasheet
