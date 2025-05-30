@@ -136,9 +136,9 @@ Pour toutes les mesures, nous avons assigné une valeur de 10 kΩ à la résist
 
 Le principe du test est de poser le capteur sur le cylindre et de le tordre selon la courbure du cylindre. Une fois le capteur bien posé, nous relevons la valeur de la résistance. 
 
-Le programme Arduino réceptionne un signal du capteur graphène et le convertit grâce à la formule : 
+Pour nos calculs, les valeurs qui nous intéressent sont la variation relative de résitance (![fraction](https://latex.codecogs.com/svg.image?\frac{ΔR}{R_0_}))
+en fonction de la déformation. 
 
-Pour nos calculs, les valeurs qui nous intéressent sont la variation relative de résitance en fonction de la déformation.
 ## Datasheet
 
 La datasheet de notre capteur est disponible [ici](Datasheet).
