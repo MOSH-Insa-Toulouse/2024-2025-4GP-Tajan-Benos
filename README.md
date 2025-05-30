@@ -52,7 +52,7 @@ Ce circuit convertit ainsi le faible courant issu du capteur en une tension prop
 
 <p align="center">
 <img src="<p align="center">
-<img src="https://github.com/MOSH-Insa-Toulouse/2024-2025-4GP-Tajan-Benos/blob/main/Image/Circuit_electronique.png" alt="Figure 1 - Circuit amplificateur">
+<img src="https://github.com/MOSH-Insa-Toulouse/2024-2025-4GP-Tajan-Benos/blob/main/Image/Circuit_amplificateur.png" alt="Figure 1 - Circuit amplificateur">
 <br>
 <i>Circuit amplificateur transimpédance</i>
 </p>
