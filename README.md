@@ -18,12 +18,12 @@
 
 ## Description Projet Graphite
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dans le cadre de l’UE "Du capteur au banc de test" en 4e année de Génie Physique à l’INSA Toulouse, nous avons développé un capteur de contrainte basé sur une technologie low-tech. Ce capteur utilise du graphite déposé sur une feuille de papier à l’aide d’un crayon. Lorsqu’on applique une déformation au papier, la structure du graphite change, ce qui modifie ses propriétés électriques, comme la résistance. Ce capteur low-tech fonctionne sur le principe de la percolation dans un réseau de nanoparticules de graphite déposé sur une feuille de papier. Le transport des électrons se fait par effet tunnel entre les particules. Lorsqu'une déformation est appliquée, la distance entre les particules varie. En extension, certains chemins de conduction sont interrompus, augmentant la résistance. En compression, la distance diminue, créant de nouveaux chemins et réduisant la résistance. La jauge de contrainte mesure ces variations de résistance pour déterminer la déformation et la contrainte appliquées. \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Le projet a consisté à développer un système complet autour de ce capteur : modélisation d'électronique analogique, création d’un circuit imprimé (PCB), programmation avec Arduino, ajout d’une interface utilisateur (écran OLED, encodeur, etc.) et communication sans fil via Bluetooth pour une application mobile. Un banc de test a été réalisé pour évaluer les performances du capteur à l'aide d'un banc de mesure réalisé en 3D. L’ensemble du travail a abouti à la rédaction d’une datasheet, décrivant les caractéristiques du capteur.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dans le cadre de l’UE "Du capteur au banc de test" en 4e année de Génie Physique à l’INSA Toulouse, nous avons développé un capteur de contrainte basé sur une technologie low-tech. Ce capteur utilise du graphite déposé sur une feuille de papier à l’aide d’un crayon. Lorsqu’on applique une déformation au papier, la structure du graphite change, ce qui modifie ses propriétés électriques, comme la résistance. Ce capteur low-tech fonctionne grâce à la variation des connexions conductrices entre les nano-particules de graphite. Le transport des électrons se fait par effet tunnel entre les particules. Lorsqu'une déformation est appliquée, la distance entre les atomes varie. En extension, certains chemins de conduction sont interrompus, augmentant la résistance. En compression, la distance diminue, créant de nouveaux chemins et réduisant la résistance. La jauge de contrainte mesure ces variations de résistance pour déterminer la déformation et la contrainte appliquées. \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Le projet a consisté à développer un système complet autour de ce capteur : modélisation d'électronique analogique, création d’un circuit imprimé (PCB), programmation avec Arduino, ajout d’une interface utilisateur (écran OLED, encodeur, etc.) et communication sans fil via Bluetooth pour une application mobile. Un banc de test a été réalisé pour évaluer les performances du capteur à l'aide d'un banc de mesure réalisé en 3D. L’ensemble du travail a abouti à la rédaction d’une datasheet, décrivant les caractéristiques du capteur. Enfin, le projet visait à repondre à la question "Ce capteur est-il industrialisable ?", en comparaison avec les capteurs commerciaux déjà présents sur le marché.
 
 ## Livrables
 
-  - Shield PCB compatible Arduino UNO, intégrant un capteur graphite, un amplificateur transimpédance, un module Bluetooth, un écran OLED, un flex sensor, un potentiomètre digital et un encodeur rotatoire
+  - Shield PCB compatible avec Arduino UNO, intégrant un capteur graphite, un amplificateur transimpédance, un module Bluetooth, un écran OLED, un flex sensor, un potentiomètre digital et un encodeur rotatoire
   - Code Arduino assurant la lecture du capteur, l’affichage des données, la communication Bluetooth et l’interaction avec les composants
   - Application Android réalisée sous MIT App Inventor pour visualiser les mesures transmises par Bluetooth
   - Graphes caractéristiques de la variation de résistance du capteur graphène et du flex sensor, pour montrer les résultats obtenus sur le banc de test
@@ -40,7 +40,7 @@
   - 1 Amplificateur LTC1050
   - 1 Écran OLED01
   - 1 Module Bluetooth HC-05
-  - 1 encodeur rotatoire 
+  - 1 Encodeur rotatoire 
 
 ## Electronique Analogique sous LTSpice
 
@@ -67,7 +67,7 @@ Lors de la phase de conception du shield, nous avons d’abord repris le gabarit
 <i>Circuit électronique</i>
 </p>
 
-Une fois notre bibliothèque faites, nous avons assemblé le schéma électrique complet : chaque composant est relié selon le fonctionnement prévu. Cette étape nous a permis de vérifier que l’ensemble des composants tenait bien sur la zone réservée au Shield. En passant à la vue PCB, nous avons effectué le routage des pistes dans le but d'une organisation optimal puis ajouté un plan de masse pour relier les pistes au GND. 
+Une fois notre bibliothèque faite, nous avons assemblé le schéma électrique complet : chaque composant est relié selon le fonctionnement prévu. Cette étape nous a permis de vérifier que l’ensemble des composants tenait bien sur la zone réservée au Shield. En passant à la vue PCB, nous avons effectué le routage des pistes dans le but d'une organisation optimale puis ajouté un plan de masse pour relier les pistes au GND. 
 Voici notre PCB :
 
 <p align="center">
@@ -76,12 +76,12 @@ Voici notre PCB :
 <i>PCB</i>
 </p>
 
-Le résultat est un circuit imprimé prêt à être fabriqué et, une fois soudés, à recevoir chaque composant sur le shield Arduino UNO.
+Le résultat est un circuit imprimé prêt à être fabriqué et à recevoir chaque composant sur le shield Arduino UNO.
 
 ## Réalisation du Shield
 
-Nous avons commencé par l’édition du masque de gravure de notre circuit imprimé (PCB) à l’aide du logiciel KiCad. Ensuite, nous avons procédé à l’insolation UV d’une plaquette d’époxy recouverte d’une fine couche de cuivre et de résine photosensible. La plaquette a ensuite été immergée dans un révélateur chimique, ce qui permet d’éliminer la résine non exposée aux UV. Il faut ensuite plongé la plaquette dans du perchlorure de fer pour de graver les pistes du circuit en dissolvant le cuivre non protégé. Et enfin, il faut un nettoyage à l’acétone pour retirer les résidus de résine restants sur la plaquette. A la fin de ce travail, nous avions notre circuit imprimé avec toutes les pistes tracées. 
-Une fois le PCB réalisé, nous n'avions plus qu'à le percer les trous et y souder tous nos composants. Voici notre PCB final :
+Nous avons commencé par l’édition du masque de gravure de notre circuit imprimé (PCB) à l’aide du logiciel KiCad. Ensuite, nous avons procédé à l’insolation UV d’une plaquette d’époxy recouverte d’une fine couche de cuivre et de résine photosensible. La plaquette a ensuite été immergée dans un révélateur chimique, ce qui permet d’éliminer la résine non exposée aux UV. Il faut ensuite plonger la plaquette dans du perchlorure de fer pour graver les pistes du circuit en dissolvant le cuivre non protégé. Enfin, il faut un nettoyage à l’acétone pour retirer les résidus de résine restants sur la plaquette. A la fin de ce travail, nous avions notre circuit imprimé avec toutes les pistes tracées. 
+Une fois le PCB réalisé, nous n'avions plus qu'à le percer et y souder tous nos composants. Voici notre PCB final :
 
 <p align="center">
 <img src="https://github.com/MOSH-Insa-Toulouse/2024-2025-4GP-Tajan-Benos/blob/main/Image/PCB_final.jpg" alt="Figure 4 - Notre PCB">
@@ -104,6 +104,8 @@ Le programme permet d'initialiser et de paramétrer nos composants pour le bon f
 <br>
 <i>Menu initial sur l'écran OLED</i>
 </p>
+
+Chaque possibilité est piloté par des fonctions indépendantes les unes des autres.
 
 ## Application Android
 
