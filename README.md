@@ -139,6 +139,28 @@ Le principe du test est de poser le capteur sur le cylindre et de le tordre selo
 Pour nos calculs, les valeurs qui nous intéressent sont la variation relative de résitance (![fraction](https://latex.codecogs.com/svg.image?\frac{\Delta%20R}{R_0_}))
 en fonction de la déformation (![fraction](https://latex.codecogs.com/svg.image?\frac{\epsilon}{D})). 
 
+Voici les courbes caractéristiques du capteur graphène, en tension et en compression : 
+
+<p align="center">
+<img src="https://github.com/MOSH-Insa-Toulouse/2024-2025-4GP-Tajan-Benos/blob/main/Image/Courbe%20Capteur%20Graphène%20Tension.png" alt="Figure 7 - Tension">
+<br>
+<i>Caractéristique du Capteur Graphène en tension</i>
+</p>
+
+<p align="center">
+<img src="https://github.com/MOSH-Insa-Toulouse/2024-2025-4GP-Tajan-Benos/blob/main/Image/Courbe%20Capteur%20Graphène%20Compression.png" alt="Figure 8 - Compression">
+<br>
+<i>Caractéristique du Capteur Graphène en compression</i>
+</p>
+
+Et ci-dessous la caractéristique du flex sensor en tension : 
+
+<p align="center">
+<img src="https://github.com/MOSH-Insa-Toulouse/2024-2025-4GP-Tajan-Benos/blob/main/Image/Courbe%20Flex%20Sensor.png" alt="Figure 9 - Flex Sensor">
+<br>
+<i>Caractéristique du flex sensor en tension</i>
+</p>
+
 ## Datasheet
 
 La datasheet de notre capteur est disponible [ici](Datasheet).
