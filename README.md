@@ -91,6 +91,12 @@ Le programme permet d'initialiser et de paramétrer nos composants pour le bon f
 - "Capteur Graph" dans le but d'afficher la mesure de résistance sur le capteur graphène
 - "Bluetooth" afin d'envoyer des mesures toutes les 2 secondes à l'application Androïd, permettant de modifier la courbure du capteur graphène et d'en remarquer la variation de résistance
 
+<p align="center">
+<img src="https://github.com/MOSH-Insa-Toulouse/2024-2025-4GP-Tajan-Benos/blob/main/Image/OLED_4_choix.png" alt="Figure 5 - OLED">
+<br>
+<i>Menu initial sur l'écran OLED</i>
+</p>
+
 ## Application Android
 
 Nous avons conçu une application Android en utilisant la plateforme MIT App Inventor. Cette application permet de recevoir les données de la carte Arduino via une connexion Bluetooth en utilisant le module HC-05 qui se trouve sur notre shield. Après la connexion bluetooth, l'application nous donne en temps réel la valeur de la résistance du capteur graphite et trace sa courbe en fonction du temps sur un graphique.
