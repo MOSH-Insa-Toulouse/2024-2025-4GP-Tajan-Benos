@@ -69,7 +69,11 @@ Lors de la phase de conception du shield, nous avons d’abord repris le gabarit
 Une fois notre bibliothèque faites, nous avons assemblé le schéma électrique complet : chaque composant est relié selon le fonctionnement prévu. Cette étape nous a permis de vérifier que l’ensemble des composants tenait bien sur la zone réservée au Shield. En passant à la vue PCB, nous avons effectué le routage des pistes dans le but d'une organisation optimal puis ajouté un plan de masse pour relier les pistes au GND. 
 Voici notre PCB :
 
-Image PCB
+<p align="center">
+<img src="https://github.com/MOSH-Insa-Toulouse/2024-2025-4GP-Tajan-Benos/blob/main/Image/PCB.png" alt="Figure 1 - PCB Final">
+<br>
+<i>PCB</i>
+</p>
 
 Le résultat est un circuit imprimé prêt à être fabriqué et, une fois soudés, à recevoir chaque composant sur le shield Arduino UNO.
 
