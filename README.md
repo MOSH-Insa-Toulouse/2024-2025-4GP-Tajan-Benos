@@ -83,7 +83,7 @@ Une fois le PCB réalisé, nous n'avions plus qu'à le percer les trous et y sou
 
 ## Code Arduino 
 
-Ce projet a été piloté par un programme Arduino. Pour utiliser les fonctions spéciales à tous les composants, nous avons installé les librairies Adafruit_SSD1306.h , SPI.h , et SoftwareSerial.h.
+Ce projet a été piloté par un programme [Arduino](Code Arduino). Pour utiliser les fonctions spéciales à tous les composants, nous avons installé les librairies Adafruit_SSD1306.h , SPI.h , et SoftwareSerial.h.
 
 Le programme permet d'initialiser et de paramétrer nos composants pour le bon fonctionnement du circuit. Une fois la carte mise sous tension, l'écran OLED affiche 4 possibilités sélectionnables grâce à l'encodeur rotatoire : 
 - "Calib Potar" permettant de définir la valeur de la résistance du potentiomètre (notée R2 dans notre montage et notre code)
